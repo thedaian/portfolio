@@ -9,7 +9,7 @@ function TagList(props)
 	return (
 		<ul className="tags">
 		{ tags.map((tag) => 
-			<li key={tag}><button onClick={(e) => props.filter(tag, e)}>{tag}</button></li>
+			<li key={tag}><button onClick={(e) => props.filter(tag)}>{tag}</button></li>
 		)}
 		</ul>
 	);
@@ -41,10 +41,23 @@ class Portfolio extends React.Component
 		this.state = { projects: portfolioProjects.slice() };
 	}
 	
-	filterByTags(tag, e)
+	filterByTags(tag)
 	{
-		e.preventDefault();
-		console.log("filtering by " + tag);
+		const projects = portfolioProjects.slice();
+		
+		for(let i = 0; i < projects.length;)
+		{
+			if(!projects[i].tags.includes(tag))
+			{
+				projects.splice(i, 1);
+			} else {
+				i++;
+			}
+		}
+		
+		this.setState({
+			projects: projects
+		});
 	}
 	
 	render()
