@@ -1,4 +1,4 @@
-export default [
+export let portfolioProjects = [
 {
 	"key": "vodka",
 	"url": "http://barchok.com/p/vodka",
@@ -6,7 +6,7 @@ export default [
 	"img": "images/vodka_th.png",
 	"alt": "IMAGE DESCRIPTION",
 	"description": "The most recently completed Javascript based web game, completed for Ludum Dare 26, theme Minimalism. Based on a version of Lemonade Stand. Buy supplies and attempt to earn a profit every night selling street vodka. Uses AngularJS, Bootstrap, and a theme from Bootswatch as part of the development. Go to the <a href=\"https://github.com/thedaian/vodka-tycoon\">Github Repository</a> to view the source code.",
-	"tags": ["javascript", "angular", "bootstrap"]
+	"tags": ["javascript", "angular", "bootstrap", "personal"]
 },
 {
 	"key": "isotower",
@@ -15,7 +15,7 @@ export default [
 	"img": "images/isotowerlogo.png",
 	"alt": "IMAGE DESCRIPTION",
 	"description": "Large long term project created using C++ and SFML 2.2. Focus towards modularity and exterior data files, using the json-c library to load .json files into the game.",
-	"tags": ["c++"]
+	"tags": ["c++", "personal"]
 },
 {
 	"key": "flags",
@@ -24,7 +24,7 @@ export default [
 	"img": "../pride_code.png",
 	"alt": "IMAGE DESCRIPTION",
 	"description": "A variety of LGBTQ+ pride flags made with CSS3 gradients.",
-	"tags": ["css"]
+	"tags": ["css", "personal"]
 },
 {
 	"key": "citygen",
@@ -33,7 +33,7 @@ export default [
 	"img": "images/citygen.png",
 	"alt": "IMAGE DESCRIPTION",
 	"description": "A very simplistic city generation prototype, used for Isotower. Written in about 3 hours with AngularJS and some Javascript.",
-	"tags": ["javascript", "angular"]
+	"tags": ["javascript", "angular", "personal"]
 },
 {
 	"key": "worldgen",
@@ -42,7 +42,7 @@ export default [
 	"img": "images/worldgen.png",
 	"alt": "IMAGE DESCRIPTION",
 	"description": "An (in development) world generator prototype. Created as a way to learn more about effectively using Simplex Noise, as well as prototyping for a really simplistic planned program.",
-	"tags": ["javascript", "canvas"]
+	"tags": ["javascript", "canvas", "personal"]
 },
 {
 	"key": "hotw",
@@ -51,7 +51,7 @@ export default [
 	"img": "images/hotwSim_th.png",
 	"alt": "IMAGE DESCRIPTION",
 	"description": "A game that roughly simulates the rules of an online forum based game called \"History of the World\". Specific details on the game and the simulator's development can be viewed with the \"About\" link on the page.",
-	"tags": ["javascript", "jquery"]
+	"tags": ["javascript", "jquery", "personal"]
 },
 {
 	"key": "ld24",
@@ -60,7 +60,7 @@ export default [
 	"img": "images/evolution_th.png",
 	"alt": "IMAGE DESCRIPTION",
 	"description": "A game using the theme of \"Evolution\" in Ludum Dare 24. The goal was to create a game using AngularJS for interation between Javascript and the HTML DOM. Sadly, the win/loss conditions of the game were rushed, and the game is much harder than it should be as a result.",
-	"tags": ["javascript", "angular"]
+	"tags": ["javascript", "angular", "personal"]
 },
 {
 	"key": "universe",
@@ -69,7 +69,7 @@ export default [
 	"img": "images/universe_th.png",
 	"alt": "IMAGE DESCRIPTION",
 	"description": "Almost entirely an experiment in CSS3 animations, the goal of this was do make a quick and simple simulation of a bit of the galaxy with space ships flying between stars and planets. The positions of the planets are random, and the ships move between them using CSS3 animations, and the only Javascript used is to randomize everything and control where the ships choose to go.",
-	"tags": ["javascript", "css"]
+	"tags": ["javascript", "css", "personal"]
 },
 {
 	"key": "monstergen",
@@ -78,7 +78,7 @@ export default [
 	"img": "images/monster.png",
 	"alt": "IMAGE DESCRIPTION",
 	"description": "Created to test monster generation mechanics for a web game. Uses AngularJS for monitoring updates to the input fields, and pure Javascript, HTML and CSS for the rest.",
-	"tags": ["javascript", "angular"]
+	"tags": ["javascript", "angular", "personal"]
 },
 {
 	"key": "stars",
@@ -87,7 +87,7 @@ export default [
 	"img": "images/stars.png",
 	"alt": "IMAGE DESCRIPTION",
 	"description": "Created in approximately 7 hours. Using pure Javascript and HTML5 Canvas.",
-	"tags": ["javascript", "canvas"]
+	"tags": ["javascript", "canvas", "personal"]
 },
 {
 	"key": "br",
@@ -96,49 +96,42 @@ export default [
 	"img": "images/battleRoyale_th.png",
 	"alt": "IMAGE DESCRIPTION",
 	"description": "Web game prototype. Majority of coding done in a week. Full HTML/CSS PHP/MySQL stack development. Guest access possible with username/password combination \"guest/guest\"",
-	"tags": ["javascript", "php", "mysql"]
+	"tags": ["javascript", "php", "mysql", "personal"]
 },
 {
 	"key": "validmon",
 	"url": "http://barchok.com/p/Validmon",
 	"name": "Validation Monster Generator",
 	"description": "Generates a monster using stats based on how valid (W3C) a webpage is. Currently in debug/test mode until further notice. Coding involves Object Oriented PHP, MySQL, and HTML/CSS.",
-	"tags": ["javascript", "php", "mysql"]
-},
-{
-	"key": "trains",
-	"url": "http://barchok.com/p/trains.zip",
-	"name": "Train Test",
-	"description": "Zipped EXE file.",
-	"tags": ["c++"]
+	"tags": ["javascript", "php", "mysql", "personal"]
 },
 {
 	"key": "vertex",
 	"url": "http://www.vertexsystems.com/intuition-vertex",
 	"name": "Intuition by Vertex",
 	"description": "Originally written using KnockoutJS and JQuery Mobile. Created the initial version of the product to be used on iPad. Client response was very positive.",
-	"tags": ["javascript", "jquery", "css"]
+	"tags": ["javascript", "jquery", "css", "professional"]
 },
 {
 	"key": "ruwad",
 	"url": "http://ruwadqa.elasticbeanstalk.com",
 	"name": "Ruwad",
 	"description": "Worked on a team to create a social media site and CMS, using Rhino and RingoJS on the backend, and JQuery on the front end.",
-	"tags": ["javascript", "ringojs", "jquery"]
+	"tags": ["javascript", "ringojs", "jquery", "professional"]
 },
 {
 	"key": "babson",
 	"url": "http://gcee.babsonglobal.org/#!",
 	"name": "Babson Global",
 	"description": "Worked with a team to develop a CMS, User Account System, and message boards using Rhino, RingoJS, and AngularJS, along with HTML5 and CSS.",
-	"tags": ["javascript", "ringojs", "angular"]
+	"tags": ["javascript", "ringojs", "angular", "professional"]
 },
 {
 	"key": "pump",
 	"url": "http://pumptraxusa.com",
 	"name": "Pumptrax USA",
 	"description": "Helped with the skinning and migration of a Wordpress site, as well as analyzing PHP code to fix various minor issues during the course of development.",
-	"tags": ["php", "css"]
+	"tags": ["php", "css", "professional"]
 },
 {
 	"key": "cards",
@@ -147,7 +140,7 @@ export default [
 	"img": "images/cards_th.png",
 	"alt": "IMAGE DESCRIPTION",
 	"description": "Short project for a photography studio in Columbus OH. Used to select and order business cards from a collection of different styles (styles replaced with template for portfolio version). Involved in full HTML/CSS, PHP, MySQL stack production.",
-	"tags": ["php", "mysql"]
+	"tags": ["php", "mysql", "professional"]
 },
 {
 	"key": "gradebook",
@@ -156,6 +149,43 @@ export default [
 	"img": "images/gradebook_th.png",
 	"alt": "IMAGE DESCRIPTION",
 	"description": "Unfinished PHP/MySQL prototype. Goal was to create a system for teachers to grade students and for both teachers and students to recieve various statistics on assignments and classwork.",
-	"tags": ["php", "mysql"]
+	"tags": ["php", "mysql", "professional"]
+}
+];
+
+export let aboutText = {
+	"description": "I write code, and I care about user experience. I do a lot in Javascript, PHP, and C++, while exploring many other languages. I like to explore and try out a variety of different subjects as well."
+};
+
+export let resumeData = [
+{
+	"company": "Cardinal Health",
+	"title": "Developer",
+	"dates": "APRIL 2014-APRIL 2016",
+	"location": "DUBLIN, OHIO",
+	"accomplished": [
+		"Maintained and updated PHP/MySQL system that monitored CPU and memory usage for servers within the company, with a focus on the ease of use and readability for non-technical users.",
+		"Improved stability significantly, bringing the error rate down from every few weeks to every few months."
+	]
+},{
+	"company": "Pykl",
+	"title":"Developer",
+	"dates": "APRIL 2012-MAY 2013",
+	"location": "GAHANNA, OHIO",
+	"accomplished": [
+		"Worked on a team to create multiple websites using Angular and RingoJS, including message boards and an article content management system.",
+		"Collaborated with designers to convert Photoshop layouts to compliant HTML and CSS.",
+		"Worked in an Agile/Scrum environment, using JIRA for task assignment, and GIT for source control."
+	]
+},{
+	"company": "Vertex Systems",
+	"title": "Jr Developer",
+	"dates": "MARCH 2011-APRIL 2012",
+	"location": "COLUMBUS, OHIO",
+	"accomplished": [
+		"Designed and developed an iPad and Android Tablet website front end for one of Vertex System's main products, using Javascript and KnockoutJS.",
+		"Incorporated feedback from the users into the product.",
+		"Used JUnit for Test Driven Development."
+	],
 }
 ];
