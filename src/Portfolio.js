@@ -144,6 +144,7 @@ class Portfolio extends React.Component
 				<ul id="menu">
 					<li><Link to="/projects">Projects</Link></li>
 					<li><Link to="/resume">Resume</Link></li>
+					<li><a href="https://github.com/thedaian" target="_blank" rel="noopener noreferrer">Github &#x2197;</a></li>
 				</ul>
 			{aboutText.description}
 			</div>

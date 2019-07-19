@@ -3,17 +3,17 @@ export let portfolioProjects = [
 	"key": "vodka",
 	"url": "http://barchok.com/p/vodka",
 	"name": "Vodka Tycoon",
-	"img": "images/vodka_th.png",
-	"alt": "IMAGE DESCRIPTION",
-	"description": "The most recently completed Javascript based web game, completed for Ludum Dare 26, theme Minimalism. Based on a version of Lemonade Stand. Buy supplies and attempt to earn a profit every night selling street vodka. Uses AngularJS, Bootstrap, and a theme from Bootswatch as part of the development. Go to the <a href=\"https://github.com/thedaian/vodka-tycoon\">Github Repository</a> to view the source code.",
+	"img": "p/images/vodka_th.png",
+	"alt": "Vodka Tycoon thumbnail",
+	"description": "The most recently completed Javascript based web game, completed for Ludum Dare 26, theme Minimalism. Based on a version of Lemonade Stand. Buy supplies and attempt to earn a profit every night selling street vodka. Uses AngularJS, Bootstrap, and a theme from Bootswatch as part of the development.",
 	"tags": ["javascript", "angular", "bootstrap", "personal"]
 },
 {
 	"key": "isotower",
 	"url": "http://isotower.com",
 	"name": "Isotower",
-	"img": "images/isotowerlogo.png",
-	"alt": "IMAGE DESCRIPTION",
+	"img": "p/images/isotowerlogo.png",
+	"alt": "Isotower Logo",
 	"description": "Large long term project created using C++ and SFML 2.2. Focus towards modularity and exterior data files, using the json-c library to load .json files into the game.",
 	"tags": ["c++", "personal"]
 },
@@ -21,17 +21,17 @@ export let portfolioProjects = [
 	"key": "flags",
 	"url": "http://barchok.com/flags.html",
 	"name": "CSS Pride Flags",
-	"img": "../pride_code.png",
-	"alt": "IMAGE DESCRIPTION",
+	"img": "pride_code.png",
+	"alt": "Pride Flags",
 	"description": "A variety of LGBTQ+ pride flags made with CSS3 gradients.",
 	"tags": ["css", "personal"]
 },
-{
+/*{
 	"key": "citygen",
 	"url": "http://barchok.com/p/citygen",
 	"name": "City Generator",
 	"img": "images/citygen.png",
-	"alt": "IMAGE DESCRIPTION",
+	"alt": "City Generator Thumbnail",
 	"description": "A very simplistic city generation prototype, used for Isotower. Written in about 3 hours with AngularJS and some Javascript.",
 	"tags": ["javascript", "angular", "personal"]
 },
@@ -40,20 +40,20 @@ export let portfolioProjects = [
 	"url": "http://barchok.com/p/worldgen",
 	"name": "World Generator",
 	"img": "images/worldgen.png",
-	"alt": "IMAGE DESCRIPTION",
+	"alt": "World Generator Thumbnail",
 	"description": "An (in development) world generator prototype. Created as a way to learn more about effectively using Simplex Noise, as well as prototyping for a really simplistic planned program.",
 	"tags": ["javascript", "canvas", "personal"]
-},
+},*/
 {
 	"key": "hotw",
 	"url": "http://barchok.com/p/hotw",
 	"name": "History of the World Simulator",
-	"img": "images/hotwSim_th.png",
-	"alt": "IMAGE DESCRIPTION",
+	"img": "p/images/hotwSim_th.png",
+	"alt": "Thumbnail",
 	"description": "A game that roughly simulates the rules of an online forum based game called \"History of the World\". Specific details on the game and the simulator's development can be viewed with the \"About\" link on the page.",
 	"tags": ["javascript", "jquery", "personal"]
 },
-{
+/*{
 	"key": "ld24",
 	"url": "http://barchok.com/p/LD24",
 	"name": "Scopes Monkey Trail Fight",
@@ -61,13 +61,13 @@ export let portfolioProjects = [
 	"alt": "IMAGE DESCRIPTION",
 	"description": "A game using the theme of \"Evolution\" in Ludum Dare 24. The goal was to create a game using AngularJS for interation between Javascript and the HTML DOM. Sadly, the win/loss conditions of the game were rushed, and the game is much harder than it should be as a result.",
 	"tags": ["javascript", "angular", "personal"]
-},
+},*/
 {
 	"key": "universe",
 	"url": "http://barchok.com/p/universe",
 	"name": "Space ship trader",
-	"img": "images/universe_th.png",
-	"alt": "IMAGE DESCRIPTION",
+	"img": "p/images/universe_th.png",
+	"alt": "CSS3 animation test thumbnail image",
 	"description": "Almost entirely an experiment in CSS3 animations, the goal of this was do make a quick and simple simulation of a bit of the galaxy with space ships flying between stars and planets. The positions of the planets are random, and the ships move between them using CSS3 animations, and the only Javascript used is to randomize everything and control where the ships choose to go.",
 	"tags": ["javascript", "css", "personal"]
 },
@@ -75,8 +75,8 @@ export let portfolioProjects = [
 	"key": "monstergen",
 	"url": "http://barchok.com/p/monstergen",
 	"name": "Monster Generator",
-	"img": "images/monster.png",
-	"alt": "IMAGE DESCRIPTION",
+	"img": "p/images/monster.png",
+	"alt": "Monster generator thumbnail",
 	"description": "Created to test monster generation mechanics for a web game. Uses AngularJS for monitoring updates to the input fields, and pure Javascript, HTML and CSS for the rest.",
 	"tags": ["javascript", "angular", "personal"]
 },
@@ -84,8 +84,8 @@ export let portfolioProjects = [
 	"key": "stars",
 	"url": "http://barchok.com/p/stars",
 	"name": "Cityscape and Starfield",
-	"img": "images/stars.png",
-	"alt": "IMAGE DESCRIPTION",
+	"img": "p/images/stars.png",
+	"alt": "Cityscape thumbnail",
 	"description": "Created in approximately 7 hours. Using pure Javascript and HTML5 Canvas.",
 	"tags": ["javascript", "canvas", "personal"]
 },
@@ -93,8 +93,8 @@ export let portfolioProjects = [
 	"key": "br",
 	"url": "http://br.aftermatheffect.com",
 	"name": "Battle Royale Webgame",
-	"img": "images/battleRoyale_th.png",
-	"alt": "IMAGE DESCRIPTION",
+	"img": "p/images/battleRoyale_th.png",
+	"alt": "Battle Royale game Thumbnail",
 	"description": "Web game prototype. Majority of coding done in a week. Full HTML/CSS PHP/MySQL stack development. Guest access possible with username/password combination \"guest/guest\"",
 	"tags": ["javascript", "php", "mysql", "personal"]
 },
@@ -137,8 +137,8 @@ export let portfolioProjects = [
 	"key": "cards",
 	"url": "http://barchok.com/p/cards",
 	"name": "HER Card Ordering System",
-	"img": "images/cards_th.png",
-	"alt": "IMAGE DESCRIPTION",
+	"img": "p/images/cards_th.png",
+	"alt": "Card Ordering System Thumbnail",
 	"description": "Short project for a photography studio in Columbus OH. Used to select and order business cards from a collection of different styles (styles replaced with template for portfolio version). Involved in full HTML/CSS, PHP, MySQL stack production.",
 	"tags": ["php", "mysql", "professional"]
 },
@@ -146,8 +146,8 @@ export let portfolioProjects = [
 	"key": "gradebook",
 	"url": "http://barchok.com/p/Gradebook",
 	"name": "Gradebook Prototype",
-	"img": "images/gradebook_th.png",
-	"alt": "IMAGE DESCRIPTION",
+	"img": "p/images/gradebook_th.png",
+	"alt": "Gradebook Thumbnail",
 	"description": "Unfinished PHP/MySQL prototype. Goal was to create a system for teachers to grade students and for both teachers and students to recieve various statistics on assignments and classwork.",
 	"tags": ["php", "mysql", "professional"]
 }
