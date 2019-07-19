@@ -1,27 +1,125 @@
-.App {
-  text-align: center;
+body {
+	background: linear-gradient(90deg, #0D2344, #0A1B35 20% 80%, #0D2344);
+	color: #FFD541;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1, h2, h3, h4, h5 {
+	margin: 0;
+	padding: 0;
+	color: #F9A31B;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+	list-style: none;
+	margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+	color: #F9A31B;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:visited {
+	color: #FFD541;
+}
+
+.styleborder {
+	border-width: 2px;
+	border-style: solid;
+	border-color: #F9A31B #FFD541;
+}
+
+#about {
+	width: 10%;
+	position: absolute;
+	padding: 10px;
+}
+
+#menu {
+	margin: 10px 0;
+}
+
+h1 {
+	margin: 8px 0;
+	padding: 0;
+}
+
+#projects, #resume {
+	margin: 0 10%;
+	padding-top: 20px;
+}
+
+#projects ul li.project h3 {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+#projects ul li.project h3 a {
+	color: #F9A31B;
+}
+
+#projects ul li.project h3 a:hover {
+	text-decoration: none;
+}
+
+#projects ul li.project h3 a:visited {
+	color: #FFD541;
+}
+
+#projects ul li.project img {
+	float: left;
+	margin: 0 20px 14px 0;
+}
+
+ul li.styleborder {
+	background: linear-gradient(180deg, #040404, #181818);
+	padding: 0 2%;
+	margin-top: 20px;
+}
+
+ul li.styleborder hr {
+	height: 2px;
+	border: 0px;
+	padding: 0;
+}
+
+ul li.styleborder hr:first-child {
+	width: 50%;
+	background: linear-gradient(90deg, #FFD541, #F9A31B);
+	margin: 2px 0 15px -1%;
+}
+
+ul li.styleborder hr:last-child {
+	width: 50%;
+	background: linear-gradient(90deg, #F9A31B, #FFD541);
+	margin: 15px 0px 2px 51%;
+	clear: both;
+}
+
+#projects ul.tags li {
+	margin: 4px 0;
+}
+
+#projects button {
+	padding: 3px 4px;
+	color: #F9A31B;
+	background-color: black;
+	border-color: #F9A31B #FFD541;
+}
+
+#resume h4 {
+	margin: 8px 0 4px;
+	font-weight: normal;
+}
+
+#resume h5 {
+	font-weight: normal;
+}
+
+#resume p {
+	margin: 8px 0;
+	padding: 0;
+	font-size: 0.9em;
 }

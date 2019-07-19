@@ -1,5 +1,6 @@
 import React from 'react';
 import './Portfolio.css';
+import { Router, Link } from "@reach/router" //https://reach.tech/router
 import {portfolioProjects, aboutText, resumeData} from './projects.js'
 
 
@@ -20,14 +21,15 @@ function Project(props)
 	let image;
 	if(props.project.img)
 	{
-		image = <img src={props.project.img} alt={props.project.alt}/>;
+		image = <img className="styleborder" src={props.project.img} alt={props.project.alt}/>;
 	}
 	return (
-		<li className="project">
-			<a href={props.project.url}>{props.project.name}</a>
+		<li className="project styleborder"><hr/>
 			{image}
+			<h3><a href={props.project.url}>{props.project.name}</a></h3>
 			<p>{props.project.description}</p>
 			<TagList tags={props.project.tags} filter={props.filter} />
+			<hr/>
 		</li>
 	);
 }
@@ -84,12 +86,14 @@ class ProjectListing extends React.Component
 function Job(props)
 {
 	return (
-		<li>
+		<li className="job styleborder">
+			<hr/>
 			<h4><strong>{props.job.company}</strong> / {props.job.title}</h4>
 			<h5>{props.job.dates},  {props.job.location}</h5>
 			{ props.job.accomplished.map((accomp, index) => 
 				<p key={index}>{accomp}</p>
 			)}
+			<hr/>
 		</li>
 	);
 }
@@ -117,6 +121,7 @@ class Resume extends React.Component
 		);
 		return (
 			<div id="resume">
+				<h2>Resume</h2>
 				<ul>{jobList}</ul>
 			</div>
 		)
@@ -125,48 +130,29 @@ class Resume extends React.Component
 
 class Portfolio extends React.Component
 {
-	constructor(props)
+	/*constructor(props)
 	{
 		super(props);
-		this.state = {
-			page: "projects"
-		};
-	}
-	
-	changePage(p)
-	{
-		this.setState({
-			page: p
-		});
-	}
+	}*/
 	
 	render()
 	{
-		let page;
-		
-		switch(this.state.page)
-		{
-			case "projects":
-				page = <ProjectListing />;
-				break;
-			case "resume":
-				page = <Resume />;
-				break;
-			case "secret":
-				page = <Secret />;
-				break;
-		}
-		
 		return (
 			<div>
 			<div id="about">
+				<h1>Todd Barchok</h1>
+				<ul id="menu">
+					<li><Link to="/projects">Projects</Link></li>
+					<li><Link to="/resume">Resume</Link></li>
+				</ul>
 			{aboutText.description}
 			</div>
-			<ul id="menu">
-				<li><button onClick={this.changePage.bind(this, "projects")}>Projects</button></li>
-				<li><button onClick={this.changePage.bind(this, "resume")}>Resume</button></li>
-			</ul>
-			{page}
+			<Router>
+				<ProjectListing path="projects" />
+				<ProjectListing default />
+				<Resume path="resume" />
+				<Secret path="secret" />
+			</Router>
 			</div>
 		)
 	}

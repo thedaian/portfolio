@@ -154,7 +154,7 @@ export let portfolioProjects = [
 ];
 
 export let aboutText = {
-	"description": "I write code, and I care about user experience. I do a lot in Javascript, PHP, and C++, while exploring many other languages. I like to explore and try out a variety of different subjects as well."
+	"description": "I write code, and I care about user experience. I do a lot in Javascript, PHP, and C++, while exploring many other languages. I also like to explore and learn about a variety of different subjects."
 };
 
 export let resumeData = [
