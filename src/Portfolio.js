@@ -3,14 +3,21 @@ import './Portfolio.css';
 import { Router, Link } from "@reach/router" //https://reach.tech/router
 import {portfolioProjects, aboutText, resumeData} from './projects.js'
 
+function Tag(props)
+{
+	let tooltip = "Filter by " + props.tag + " projects";
+	return (
+		<li className={props.tag}><button onClick={(e) => props.filter(props.tag)} title={tooltip}>{props.tag}</button></li>
+	);
+}
 
 function TagList(props)
 {
 	const tags = props.tags;
 	return (
-		<ul className="tags"><li><button onClick={(e) => props.filter("all")}>all</button></li>
+		<ul className="tags"><li><button onClick={(e) => props.filter("all")} title="Show all projects">all</button></li>
 		{ tags.map((tag) => 
-			<li key={tag} className={tag}><button onClick={(e) => props.filter(tag)}>{tag}</button></li>
+			<Tag tag={tag} filter={props.filter} />
 		)}
 		</ul>
 	);
@@ -122,6 +129,7 @@ class Resume extends React.Component
 		return (
 			<div id="resume">
 				<h2>Resume</h2>
+				<a href="resume.html">Full Resume</a>
 				<ul>{jobList}</ul>
 			</div>
 		)
@@ -140,13 +148,13 @@ class Portfolio extends React.Component
 		return (
 			<div>
 			<div id="about">
-				<h1>Todd Barchok</h1>
+				<h1><Link to="/">Todd Barchok</Link></h1>
 				<ul id="menu">
 					<li><Link to="/projects">Projects</Link></li>
 					<li><Link to="/resume">Resume</Link></li>
 					<li><a href="https://github.com/thedaian" target="_blank" rel="noopener noreferrer">Github &#x2197;</a></li>
 				</ul>
-			{aboutText.description}
+			<p>{aboutText.description}</p>
 			</div>
 			<Router>
 				<ProjectListing path="projects" />
